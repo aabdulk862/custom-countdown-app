@@ -99,7 +99,9 @@ button {
   outline: none;
 }
 
-
+button:hover{
+  filter: brightness(115%);
+}
 
 /* Countdown */
 ul {
@@ -107,7 +109,7 @@ ul {
 }
 
 li {
-
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -126,6 +128,27 @@ li span {
   top: 60px;
 }
 
+.complete-title{
+  animation: complete 4s infinite;
+}
+@keyframes complete{
+  0%{
+    color: rgb(233, 53, 53);
+  }
+  25%{
+    color: rgb(233, 230, 53);
+  }
+  50%{
+    color: rgb(74, 233, 53);
+    transform: scale(1.5);
+  }
+  75%{
+    color: rgb(53, 110, 233);
+  }
+  100%{
+    color: rgb(167, 53, 233);
+  }
+}
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 800px ){
