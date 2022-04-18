@@ -24,7 +24,6 @@ const day = hour * 24;
 
 // Set Date Input Min & Value with Today's Date
 const today = new Date().toISOString().split('T')[0];
-console.log(today);
 dateEl.setAttribute('min', today);
 
 // Populate Countdown / Complete UI
