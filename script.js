@@ -30,7 +30,7 @@ dateEl.setAttribute('min', today);
 function updateDOM() {
   countdownActive = setInterval(() => {
     const now = new Date().getTime();
-    const distance = countdownValue - now;
+    const distance = countdownValue - now + (hour*4);
     const days = Math.floor(distance / day);
     const hours = Math.floor((distance % day) / hour)  //plus 4 for eastern time
     const minutes = Math.floor((distance % hour) / minute);
